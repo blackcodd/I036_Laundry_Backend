@@ -1,0 +1,6 @@
+@TechLaundry_HostAddress = http://localhost:5056
+
+GET {{TechLaundry_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
