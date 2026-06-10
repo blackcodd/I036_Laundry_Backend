@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechLaundry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d430c28cd0f2cd77887a67361551ffa46e3083e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechLaundry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechLaundry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

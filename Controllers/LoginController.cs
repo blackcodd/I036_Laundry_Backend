@@ -12,10 +12,12 @@ namespace TechLaundry.Controllers
     {
         private readonly AppDbContext _context;
         private readonly PasswordService _passwordService;
-        public LoginController(AppDbContext context, PasswordService passwordService)
+        private readonly TokenService _tokenService;
+        public LoginController(AppDbContext context, PasswordService passwordService, TokenService tokenService)
         {
             _context = context;
             _passwordService = passwordService;
+            _tokenService = tokenService;
         }
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto dto)
@@ -30,9 +32,12 @@ namespace TechLaundry.Controllers
             {
                 return BadRequest("Invalid Email or Password");
             }
+            var token = _tokenService.GenerateToken(user.Email, user.Role);
+            
             return Ok(new
             {
                 message = "Login Successful",
+                token,
                 user.Id,
                 user.Email,
                 user.Role
