@@ -43,7 +43,22 @@ internal class Program
         });
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowReact",
+                policy =>
+                {
+                    policy
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+        });
 
+        
+
+
+        //  sesh
         builder.Services.AddScoped<PasswordService>();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -61,11 +76,12 @@ internal class Program
         }
 
         app.UseHttpsRedirection();
-
+        app.UseCors("AllowReact");
         app.UseAuthorization();
 
         app.MapControllers();
 
         app.Run();
+
     }
 }

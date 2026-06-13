@@ -22,15 +22,18 @@ namespace TechLaundry.Controllers
 
         [HttpPost]
         public async Task<IActionResult>Register(RegisterDto dto)
+
         {
+            if (dto.Email[0] < 'a') return BadRequest("Set Email Correctly");
             var existinguser = await _context.Users.FirstOrDefaultAsync(x => x.Email == dto.Email);
 
             if (existinguser != null)
             {
                 return BadRequest("Email Already Exist");
             }
-
+            
             var hashPassword = _passwordService.HashPassword(dto.Password);
+            Console.WriteLine("This is hash", hashPassword);
             var user = new User
             {
                 Name = dto.Name,
@@ -45,6 +48,7 @@ namespace TechLaundry.Controllers
                 massage = "User Registered Successfully",
                 user.Id,
                 user.Email
+                
             });
 
         }

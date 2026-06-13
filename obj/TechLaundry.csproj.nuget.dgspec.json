@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\u2104\\source\\repos\\blackcodd\\I036_Laundry_Backend\\TechLaundry.csproj": {}
+    "D:\\Dotnet\\TechLaundry Backend Project\\I036_Laundry_Backend\\TechLaundry.csproj": {}
   },
   "projects": {
-    "C:\\Users\\u2104\\source\\repos\\blackcodd\\I036_Laundry_Backend\\TechLaundry.csproj": {
+    "D:\\Dotnet\\TechLaundry Backend Project\\I036_Laundry_Backend\\TechLaundry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\u2104\\source\\repos\\blackcodd\\I036_Laundry_Backend\\TechLaundry.csproj",
+        "projectUniqueName": "D:\\Dotnet\\TechLaundry Backend Project\\I036_Laundry_Backend\\TechLaundry.csproj",
         "projectName": "TechLaundry",
-        "projectPath": "C:\\Users\\u2104\\source\\repos\\blackcodd\\I036_Laundry_Backend\\TechLaundry.csproj",
+        "projectPath": "D:\\Dotnet\\TechLaundry Backend Project\\I036_Laundry_Backend\\TechLaundry.csproj",
         "packagesPath": "C:\\Users\\u2104\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u2104\\source\\repos\\blackcodd\\I036_Laundry_Backend\\obj\\",
+        "outputPath": "D:\\Dotnet\\TechLaundry Backend Project\\I036_Laundry_Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

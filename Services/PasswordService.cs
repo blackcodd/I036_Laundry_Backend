@@ -1,5 +1,5 @@
 ﻿using BCrypt.Net;
-
+        
 namespace TechLaundry.Services
 {
     public class PasswordService

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BU/Xk3XIV24=",
+  "dgSpecHash": "WTMZqg+phjo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\u2104\\source\\repos\\blackcodd\\I036_Laundry_Backend\\TechLaundry.csproj",
+  "projectFilePath": "D:\\Dotnet\\TechLaundry Backend Project\\I036_Laundry_Backend\\TechLaundry.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\u2104\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\u2104\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

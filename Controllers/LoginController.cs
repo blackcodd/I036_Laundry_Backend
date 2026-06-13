@@ -22,6 +22,7 @@ namespace TechLaundry.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto dto)
         {
+            Console.WriteLine(dto.Email);
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == dto.Email);
             if (user == null)
             {
